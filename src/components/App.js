@@ -4,6 +4,7 @@ import AppShell from "./AppShell";
 import Home from "./Home";
 import Texts from "./Texts";
 import Words from "./Words";
+import Detail from "./Detail";
 
 class App extends React.Component {
     render() {
@@ -14,6 +15,10 @@ class App extends React.Component {
                         <Route path="/" element={<Home />} />
                         <Route path="/texts" element={<Texts />} />
                         <Route path="/words" element={<Words />} />
+                        <Route
+                            path="/texts/detail/:textID"
+                            element={<Detail />}
+                        />
                     </Routes>
                 </AppShell>
             </Router>
